@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/secjong/host-manager-electron/issues"
   },
-  "homepage": "https://github.com/secjong/host-manager-electron#readme"
+  "homepage": "https://github.com/secjong/host-manager-electron#readme",
+  "devDependencies": {
+    "electron": "^21.2.0"
+  }
 }
