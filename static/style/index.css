@@ -1,0 +1,13 @@
+#wrapper {
+    display: flex;
+}
+
+#leftSideArea {
+    border: 1px solid red;
+    flex: 1 1 auto;
+}
+
+#contentArea {
+    border: 1px solid blue;
+    flex: 4 4 auto;
+}

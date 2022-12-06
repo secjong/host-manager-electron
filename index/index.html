@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      http-equiv="Content-Security-Policy"
+      content="default-src 'self'; script-src 'self'"
+    />
+    <meta
+      http-equiv="X-Content-Security-Policy"
+      content="default-src 'self'; script-src 'self'"
+    />
+    <title>Hello from Electron renderer!</title>
+    <link href="../static/style/common/reset.css" rel="stylesheet" />
+    <link href="../static/style/index.css" rel="stylesheet" />
+    <script src="../static/script/common/common.js"></script>
+  </head>
+  <body>
+    <h1>host 관리</h1>
+    <div>
+      <ul>
+        <li>
+          <button type="button" id="showHostButton">호스트 보기</button>
+        </li>
+      </ul>
+    </div>
+    <div>
+      <span><span>ip : </span><input type="text" name="ip" id="ip" placeholder="111.222.333.444" /></span>
+      <span><span>host : </span><input type="text" name="host" id="host" placeholder="travel.interpark.com" /></span>
+      <span><span>설명 : </span><input type="text" name="description" id="description" placeholder="설명" /></span>
+      <span><button type="button" id="addHostButton">호스트 등록</button></span>
+    </div>
+    <div id="wrapper">
+      <div id="leftSideArea">
+        <ul>
+          <li>
+            그룹1
+            <ul>
+              <li>dev</li>
+              <li>stag</li>
+              <li>prod</li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+      <div id="contentArea">
+        호스트 내용
+        <div id="hostsFileContents">
+  
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="../static/script/index.js"></script>
+</html>
